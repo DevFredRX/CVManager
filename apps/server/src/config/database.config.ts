@@ -21,7 +21,7 @@ export default registerAs('database', (): DataSourceOptions => {
         username: process.env.DB_USER,
         password: process.env.DB_PASSWORD,
         database: process.env.DB_NAME,
-        entities: [path.join(process.cwd(), './dist/src/entities/*.entity.js')],
+        entities: [path.join(process.cwd(), './dist/src/**/*.entity.js')],
         migrations: [path.join(process.cwd(), './dist/src/migrations/*.js')],
         synchronize: false,
         logging: process.env.NEST_ENV === 'development'
