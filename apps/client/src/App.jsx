@@ -5,7 +5,6 @@ import '@styles/theme.css'
 import MainLayout from "@layouts/MainLayout";
 import NotFound from "@pages/NotFound";
 import InProgress from "@pages/InProgress";
-import Register from "@pages/Register";
 
 export const routes = [
   {
