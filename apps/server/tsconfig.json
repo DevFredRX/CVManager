@@ -30,7 +30,9 @@
       "@config/*": ["./src/config/*"],
       "@middlewares/*": ["./src/middlewares/*"],
       "@migrations/*": ["./src/migrations/*"],
-      "@app/*": ["./src/app/*"]
+      "@app/*": ["./src/app/*"],
+      "@user/*": ["./src/user/*"],
+      "@auth/*": ["./src/auth/*"]
     }
   },
   "include": ["src/**/*", "test/**/*"],
