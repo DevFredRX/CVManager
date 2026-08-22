@@ -1,0 +1,50 @@
+{
+  "name": "cvmanager",
+  "slug": "Une solution intelligente pour vos candidatures.",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CV Manager est une application moderne conçue pour centraliser et optimiser la gestion des candidatures. Le projet adopte une architecture robuste permettant une séparation claire entre la logique métier et l'interface utilisateur.",
+  "keywords": [
+    "React.js",
+    "NestJS",
+    "MySQL"
+  ],
+  "homepage": "https://github.com/DevFredRX/CVManager#readme",
+  "bugs": {
+    "url": "https://github.com/DevFredRX/CVManager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DevFredRX/CVManager.git"
+  },
+  "license": "MIT",
+  "author": "FredRX",
+  "type": "module",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=apps/client && npm run build --workspace=apps/server",
+    "dev": "concurrently \"npm run dev --workspace=apps/client\" \"npm run start:dev --workspace=apps/server\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "npm run test --workspace=apps/server",
+    "test:e2e": "npm run test:e2e --workspace=apps/server"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.6",
+    "@eslint/js": "^10.0.1",
+    "concurrently": "^10.0.5",
+    "eslint": "^10.9.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.4",
+    "globals": "^17.11.0",
+    "prettier": "^3.9.6"
+  },
+  "allowScripts": {
+    "unrs-resolver@1.12.2": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "paths": {
+            "@public/*": ["../public/*"],
+            "@assets/*": ["./public/*"],
+            "@styles/*": ["./src/assets/styles/*"],
+            "@scripts/*": ["./src/assets/scripts/*"],
+            "@config/*": ["./src/config/*"],
+            "@layouts/*": ["./src/layouts/*"],
+            "@components/*": ["./src/components/*"],
+            "@pages/*": ["./src/pages/*"],
+        },
+        "checkJs": false,
+        "jsx": "react-jsx"
+    },
+    "include": ["src"]
+}
